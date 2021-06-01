@@ -1,0 +1,87 @@
+body{/* gjorde en grid men bakgrundsfärgen aqua över hela body*/
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 1fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+    background-color: aqua;
+    
+}
+h1{ /*ändrade fonten och vart texten står på huvudrubrik 1 */
+    font-size: 100px;
+    text-align: center;
+    margin:0;
+}
+footer{ /*ändrade fonten och bakgrundsfärgen */
+    font-size: 100px;/*hur stor fonten är */
+    grid-area: footer; /*vart arean på griden är */
+    background-color: rgb(244, 165, 127); /*backgrundsfärgen rgb */
+}
+header{
+    grid-area:header;
+    background-color:   #3366ff;
+    font-size: 2em;
+    text-align: center;
+}
+nav{
+    grid-area:nav;
+    border-radius: 5px; /*rundade hörn*/
+    background-color: black; /*bakgrundsfärgen är svart*/
+}
+main{
+    grid-area:main;
+}
+footer p{
+    text-align: center;
+}
+ul{/*gjorde en grid för ul*/
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style-type:none;
+
+}
+li{
+    text-align: center;
+}
+a:visited{
+    color:red;
+}
+h2{
+    text-align: center;
+    font-size:4em ;
+}
+#gridmain{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 10vh 10vh;
+    grid-template-areas: "div div"
+    "p ol"
+    ". ."
+    ". .";
+
+}
+div{
+    grid-area:div;/*vart arean på griden är */
+}
+ol li{ /*ändrade på ordered list och listan så att texten står på vänster sida */
+    text-align: left;
+    margin-left:50%;
+}
+p{
+    grid-area:p;/*vart arean på griden är */
+}
+ol{
+    grid-area:ol;/*vart arean på griden är */
+}
+#låtlista{
+    text-align:left;
+}
+#headerfarg{
+    color:burlywood; /*ändrade färgen på id selektor*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*ändrade fonten till calibri*/
+}
+
